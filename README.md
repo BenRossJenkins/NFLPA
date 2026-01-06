@@ -1,10 +1,22 @@
 # NFLPA Case Competition: Cumulative Workload Analysis
 
+**2025-26 NFLPA Data Analytics Case Competition Submission**
+
+This project was prepared for the [NFLPA Data Analytics Case Competition](https://nflpa.com/datacompetition), which challenges participants to examine how cumulative effects of workload throughout the season impact player performance, injury risk, earnings, or team wins and losses. The competition asks: *What 2-3 priorities should the NFLPA focus on to better advocate for the interests of players relating to cumulative workload?*
+
+**Competition Details:**
+- **Challenge**: Analyze cumulative workload effects and propose policy priorities for the NFLPA
+- **Submission Requirements**: Executive summary (<1 page) + detailed write-up (≤2,000 words, ≤10 tables/visualizations)
+- **Evaluation Criteria**: Rationale for cumulative effects evaluation, data validity and methods, feasibility of proposed approach from union and management perspectives
+- **Competition Website**: [nflpa.com/datacompetition](https://nflpa.com/datacompetition)
+
+---
+
 Analysis of NFL scheduling patterns and their impact on player injuries, performance, and competitive fairness (2015-2024).
 
 ## Overview
 
-This project examines how rest periods, schedule compression, and cumulative workload affect player health and competitive balance in the NFL. Using causal inference methods (differences-in-differences, marginal structural models, survival analysis) and Bayesian hierarchical modeling, we quantify the impact of Thursday Night Football, the 17-game season expansion, and rest differentials on injury risk.
+This project examines how rest periods, schedule compression, and cumulative workload affect player health and competitive balance in the NFL. Using survival analysis, causal inference methods (differences-in-differences, marginal structural models), and Bayesian hierarchical modeling, we quantify the impact of Thursday Night Football, the 17-game season expansion, and rest differentials on injury risk.
 
 ## Key Findings
 
@@ -60,9 +72,9 @@ Data is automatically downloaded when scripts are run (requires internet connect
 
 ## Methodology
 
-- **Survival Analysis**: Cox proportional hazards models for time-to-injury
-- **Differences-in-Differences**: 17-game season expansion as natural experiment
-- **Marginal Structural Models**: Inverse probability weighting for time-varying confounding
+- **Survival Analysis**: Cox proportional hazards models for time-to-injury (descriptive/observational)
+- **Differences-in-Differences**: 17-game season expansion as natural experiment (causal)
+- **Marginal Structural Models**: Inverse probability weighting for time-varying confounding (causal)
 - **Bayesian Hierarchical Models**: Multilevel models with team/season random effects
 - **Counterfactual Simulations**: Policy impact estimation
 
